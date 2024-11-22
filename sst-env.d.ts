@@ -6,11 +6,11 @@ import "sst"
 export {}
 declare module "sst" {
   export interface Resource {
-    "MyBucket": {
+    "DeveroppersBucket": {
       "name": string
       "type": "sst.aws.Bucket"
     }
-    "MyWeb": {
+    "DeveroppersWeb": {
       "type": "sst.aws.Astro"
       "url": string
     }

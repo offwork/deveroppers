@@ -9,9 +9,9 @@ export default $config({
     };
   },
   async run() {
-    const bucket = new sst.aws.Bucket("MyBucket", {
+    const bucket = new sst.aws.Bucket("DeveroppersWebBucket", {
       access: "public",
     });
-    new sst.aws.Astro("MyWeb", { link: [bucket] });
+    new sst.aws.Astro("DeveroppersWeb", { link: [bucket] });
   },
 });
