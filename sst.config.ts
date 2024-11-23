@@ -6,6 +6,11 @@ export default $config({
       name: "deveroppers",
       removal: input?.stage === "production" ? "retain" : "remove",
       home: "aws",
+      providers: {
+        aws: {
+          profile: input?.stage === "staging" ? "staging" : "default"
+        }
+      }
     };
   },
   async run() {
